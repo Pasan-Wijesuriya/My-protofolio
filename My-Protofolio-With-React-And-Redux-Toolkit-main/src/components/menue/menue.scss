@@ -1,0 +1,35 @@
+.menue {
+  width: 300px;
+  position: fixed;
+  z-index: 11;
+  right: -100%;
+  background: #333;
+  height: calc(100% - 70px);
+  color: white;
+  transition: 1s ease;
+  top: 70px;
+
+  &.active {
+    right: 0;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    list-style: none;
+
+    li {
+      position: relative;
+      a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        font-size: 21px;
+        font-weight: 300;
+      }
+    }
+  }
+}

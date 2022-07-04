@@ -1,0 +1,58 @@
+.projectsPage {
+  padding-top: 80px;
+  transition: 0.3s;
+
+  .ProjectsPageInfo {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    font-size: 35px;
+  }
+
+  .item {
+    margin-bottom: 5vh;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: relative;
+
+    .item-number {
+      position: absolute;
+      padding: 7px;
+      top: 5px;
+      left: 5px;
+      color: white;
+      border-radius: 5px;
+      font-weight: 500;
+      z-index: 2;
+    }
+
+    .imgContainer {
+      height: 40vh;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.364);
+
+      img {
+        transition: 7s;
+        width: 100%;
+        &:hover {
+          transform: translateY(-100%);
+        }
+      }
+    }
+
+    .item-buttons {
+      a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+    }
+  }
+}

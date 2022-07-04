@@ -1,0 +1,67 @@
+@import "../../global.scss";
+
+.about {
+  min-height: 100vh;
+  margin-top: 30px;
+  background-color: #f6f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  @include mobile {
+    padding-top: 40px;
+  }
+
+  .a-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+
+    .a-card {
+      width: 60%;
+      height: 70vh;
+      border-radius: 30px;
+      position: relative;
+      overflow: hidden;
+      @media (max-width: 992px) {
+        height: auto;
+        & {
+          margin-bottom: 70px;
+        }
+      }
+      &.bg {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background-color: $mainColor;
+      }
+      .a-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .a-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .a-title {
+      font-weight: 400;
+    }
+
+    .a-sub {
+      margin: 20px 0px;
+    }
+
+    .a-desc {
+      font-weight: 300;
+      line-height: 1.7;
+    }
+  }
+}

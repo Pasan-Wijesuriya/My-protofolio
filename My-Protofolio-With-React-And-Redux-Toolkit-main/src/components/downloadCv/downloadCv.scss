@@ -1,0 +1,28 @@
+@import '../../global.scss';
+.cv {
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f7fa;
+  color: #333;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+
+  .cv-info {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    background-color: $buttonColor;
+    box-shadow: 0 20px 20px rgb(13 121 221 / 19%);
+        padding: 15px 50px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+}
